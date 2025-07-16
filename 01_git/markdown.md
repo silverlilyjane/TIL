@@ -50,3 +50,4 @@ cosole.log('test')
 
 
 <숙제용 추가>
+test
