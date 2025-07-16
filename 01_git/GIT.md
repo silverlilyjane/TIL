@@ -31,3 +31,5 @@
 - `git remove -v`
 
 - `git push -u origin master` 후 github 로그인
+
+<숙제용 추가>
