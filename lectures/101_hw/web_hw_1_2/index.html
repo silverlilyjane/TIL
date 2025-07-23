@@ -1,0 +1,37 @@
+<!--
+
+단, USERNAME 글자를 클릭하면 아이디를 입력하는 input에, PWD 글자를 클릭하면 비밀번호를 입력하는 input에 focusing 되어야한다.
+비밀번호 작성시 사용자에게 원본 문자가 무엇인지 알아볼수 없도록 글자가 변환되어 보여야 한다.
+'*', '●' 등을 모두 의미한다.
+
+
+실행 결과는 첨부된 result 폴더의 이미지를 참고한다.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #007bff;
+      outline:none;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <label for="username">USERNAME:</label>
+    <input type="text" id="username" name="username" placeholder="아이디를 입력해 주세요.">
+  </div>
+  <div>
+    <label for="pass">PWD:</label>
+    <input type="password" id="pass" name="password" required>
+    <input type="submit" value="로그인">
+  </div>
+
+</body>
+</html>
